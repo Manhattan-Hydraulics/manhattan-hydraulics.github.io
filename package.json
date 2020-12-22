@@ -1,0 +1,22 @@
+{
+  "name": "hydraulics",
+  "version": "1.0.0",
+  "description": "Manhattan Hydraulics website",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manhattan-Hydraulics/site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manhattan-Hydraulics/site/issues"
+  },
+  "homepage": "https://github.com/Manhattan-Hydraulics/site#readme",
+  "devDependencies": {
+    "eslint": "^7.16.0"
+  }
+}

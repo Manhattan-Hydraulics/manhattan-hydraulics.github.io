@@ -28,6 +28,8 @@ $(document).ready(function () {
       easing: "easeOutCirc",
     },
 
+    settings: {},
+
     ui: {
       body: $("body"),
       win: $(window),
@@ -49,9 +51,9 @@ $(document).ready(function () {
     sizes: {},
 
     ix: {
-      handleFooterHover: function () {
+      handleMouseLeave: function () {
         this.closePanel(site.ui.leftPanel.el);
-        this.closePanel(site.ui.rightPanel.el)
+        this.closePanel(site.ui.rightPanel.el);
       },
 
       handlePanelHover: function (panel) {
@@ -126,7 +128,32 @@ $(document).ready(function () {
         (site.ui.footer.outerHeight() + site.ui.headers.outerHeight());
     },
 
+    checkMediaQuery: function () {
+      if (!$(".media-check").length) {
+        $("body").append('<div class="media-check"></div>');
+      }
+      var mediaCheck = $(".media-check").css("text-indent");
+      // if (mediaCheck === "10px") {
+      //   a.sizes.media = "mobile";
+      // } else if (mediaCheck === "20px") {
+      //   a.sizes.media = "tablet";
+      // } else if (mediaCheck === "30px") {
+      //   a.sizes.media = "desktop";
+      // } else if (mediaCheck === "40px") {
+      //   a.sizes.media = "xl";
+      // } else if (mediaCheck === "50px") {
+      //   a.sizes.media = "xxl";
+      // } else {
+      //   a.sizes.media = "unsure";
+      // }
+      site.settings.screenType =
+        $("html").hasClass("mobile") || $("html").hasClass("tablet")
+          ? "touch"
+          : "mouse";
+    },
+
     init: function () {
+      this.checkMediaQuery();
       this.getSizes();
       this.bindEvents();
       this.setPositions();
@@ -151,8 +178,12 @@ $(document).ready(function () {
       });
 
       $(site.ui.footer).on("mouseenter", function () {
-        site.ix.handleFooterHover();
+        site.ix.handleMouseLeave();
       });
+
+      $(site.ui.body).on("mouseleave", function () {
+        site.ix.handleMouseLeave();
+      })
 
       this.ui.win.on("resize", this.resize);
     },

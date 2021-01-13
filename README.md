@@ -1,13 +1,33 @@
 # Manhattan Hydraulics Web Site ™
 
+## Tech overview
 For ease of use, this website uses the following technologies:
 * [jQuery](https://jquery.com/), a javascript library intended to make it easier to create interactinons with HTML elements and content.
 * [Eleventy](https://www.11ty.dev/), a javascript-based "static site generator". This lets us very simply manage the website copy without needing to touch any of the code. Each bit of copy is simply a Markdown file.
+
+### File structure
+```js
+- _site/       // compiled website, don't touch
+- assets/       // contains css, fonts, images, js
+- views/        // site matter
+  - elements/        // contains all site content in .md files
+    - content/        // main body content of left/right sections
+    - footer/        // footer content for left/right sections
+    - header/        // just contains our studio name
+    - footer.md        // layout file, do not edit
+    - panel.md        // layout file, do not edit
+  - layouts/        // contains layout files that content is compiled into by Eleventy. SEO information is stored here.
+  - index.md        // assembles all the elements
+- .*.js        // config files, leave them be
+- package.json        // site dependencies
+- README.md        // the thing you are reading rn
+```
 
 ## Tools you need
 - [GitHub Desktop](https://desktop.github.com/) — [Here's how to use it](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop)
   - Skip this if you know how to use the git CLI
 - A code editor like Atom or VS Code
+
 
 ## Setup
 1. Install latest version of [node.js](https://nodejs.org/en/download/)

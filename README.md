@@ -29,6 +29,7 @@ For ease of use, this website uses the following technologies:
 - [GitHub Desktop](https://desktop.github.com/) — [Here's how to use it](https://docs.github.com/en/free-pro-team@latest/desktop/contributing-and-collaborating-using-github-desktop)
   - Skip this if you know how to use the git CLI
 - A code editor like Atom or VS Code
+- A command line app. Every OS has one by default, or you can use Hyperterm or iTerm.
 
 
 ## Setup

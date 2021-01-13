@@ -1,5 +1,7 @@
 # Manhattan Hydraulics Web Site ™
 
+🚨 Pushing directly to main will deploy the website, so do this with care. When in doubt, create a new branch and submit a PR.
+
 ## Tech overview
 For ease of use, this website uses the following technologies:
 * [jQuery](https://jquery.com/), a javascript library intended to make it easier to create interactinons with HTML elements and content.

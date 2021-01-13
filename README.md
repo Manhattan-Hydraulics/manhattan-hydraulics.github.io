@@ -1,11 +1,13 @@
 # Manhattan Hydraulics Web Site ™
 
 🚨 Pushing directly to `main` branch will deploy the website, so do this with care. When in doubt, create a new branch and submit a PR.
+🙇‍♂️ If you don't want to make changes yourself, create a [Github Issue](https://github.com/Manhattan-Hydraulics/site/issues/new) with a descriptive change request, or post in Twist.
 
 ## Tech overview
 For ease of use, this website uses the following technologies:
 * [jQuery](https://jquery.com/), a javascript library intended to make it easier to create interactinons with HTML elements and content.
 * [Eleventy](https://www.11ty.dev/), a javascript-based "static site generator". This lets us very simply manage the website copy without needing to touch any of the code. Each bit of copy is simply a Markdown file.
+* [Markdown](https://guides.github.com/features/mastering-markdown/) is a lightweight text markup language for formatting text. We use Markdown files to write the site's content because it's easy, accessible, and free.
 
 ### File structure
 ```js

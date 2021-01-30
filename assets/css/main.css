@@ -32,6 +32,20 @@
     rgba(223, 237, 254, 0) 100%
   );
   --spring-white: rgba(249, 245, 243, 1);
+  --construction-yellow: rgb(241, 198, 107);
+  --construction-yellow-gradient: linear-gradient(
+    0deg,
+    rgba(241, 198, 107, 1) 0%,
+    rgba(241, 198, 107, 0.8) 90%,
+    rgba(241, 198, 107, 0) 100%
+  );
+  --manhattan-blue: rgb(80, 122, 189);
+  --manhattan-blue-gradient: linear-gradient(
+    0deg,
+    rgba(80, 122, 189, 1) 0%,
+    rgba(80, 122, 189, 0.8) 90%,
+    rgba(80, 122, 189, 0) 100%
+  );
   --font-stack: "Whyte", Helvetica, Arial, sans-serif;
   --font-stack-header: "Whyte Inktrap", var(--font-stack);
 }
@@ -108,21 +122,21 @@ footer {
 }
 
 body.left {
-  background: var(--cardboard-brown);
-  color: var(--forest-green);
+  background: var(--manhattan-blue);
+  color: var(--spring-white);
 }
 
 body.left footer {
-  background: var(--cardboard-brown-gradient-gradient);
+  background: var(--manhattan-blue-gradient);
 }
 
 body.right {
-  background: var(--cloud-blue);
+  background: var(--construction-yellow);
   color: var(--forest-green);
 }
 
 body.right footer {
-  background: var(--cloud-blue-gradient);
+  background: var(--construction-yellow-gradient);
 }
 
 footer section {

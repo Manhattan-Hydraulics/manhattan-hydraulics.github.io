@@ -24,7 +24,7 @@ $(document).ready(function () {
 
   var site = {
     animationSettings: {
-      speed: 420,
+      speed: 240,
       easing: "easeOutCirc",
     },
 
@@ -38,11 +38,13 @@ $(document).ready(function () {
       footer: $("footer"),
       leftPanel: {
         el: $(".panel--left"),
+        key: "left",
         backgroundColor: theme.cardboardBrown,
         color: theme.forestGreen,
       },
       rightPanel: {
         el: $(".panel--right"),
+        key: "right",
         backgroundColor: theme.cloudBlue,
         color: theme.forestGreen,
       },
@@ -51,17 +53,17 @@ $(document).ready(function () {
     sizes: {},
 
     ix: {
-      handleMouseLeave: function () {
-        this.closePanel(site.ui.leftPanel.el);
-        this.closePanel(site.ui.rightPanel.el);
-      },
+      // handleMouseLeave: function () {
+      //   this.closePanel(site.ui.leftPanel.el);
+      //   this.closePanel(site.ui.rightPanel.el);
+      // },
 
       handlePanelHover: function (panel) {
         this.openPanel(panel);
+      },
 
-        $(panel).is(site.ui.leftPanel.el)
-          ? this.closePanel(site.ui.rightPanel.el)
-          : this.closePanel(site.ui.leftPanel.el);
+      handlePanelLeave: function (panel) {
+        this.closePanel(panel);
       },
 
       openPanel: function (panel) {
@@ -96,6 +98,7 @@ $(document).ready(function () {
           ? $(site.ui.body).removeClass("left")
           : $(site.ui.body).removeClass("right");
         $(panel)
+          .stop(true)
           .animate(
             {
               "padding-top": site.sizes.headerHeight,
@@ -172,18 +175,26 @@ $(document).ready(function () {
 
     bindEvents: function () {
       $.each([site.ui.leftPanel.el, site.ui.rightPanel.el], function () {
-        $(this).on("mouseenter", function () {
-          site.ix.handlePanelHover(this);
-        });
+        $(this)
+          .on("mouseenter", function () {
+            site.ix.handlePanelHover(this);
+          })
+          .on("mouseleave", function () {
+            site.ix.handlePanelLeave(this);
+          });
       });
 
       $(site.ui.footer).on("mouseenter", function () {
-        site.ix.handleMouseLeave();
+        $.each([site.ui.leftPanel.el, site.ui.rightPanel.el], function () {
+          site.ix.handleMouseLeave(this);
+        });
       });
 
       $(site.ui.body).on("mouseleave", function () {
-        site.ix.handleMouseLeave();
-      })
+        $.each([site.ui.leftPanel.el, site.ui.rightPanel.el], function () {
+          site.ix.handleMouseLeave(this);
+        });
+      });
 
       this.ui.win.on("resize", this.resize);
     },

@@ -21,17 +21,31 @@
   --cardboard-brown-gradient: linear-gradient(
     0deg,
     rgba(150, 138, 135, 1) 0%,
-    rgba(150, 138, 135, 0.8) 90%,
+    rgba(150, 138, 135, 0.9) 90%,
     rgba(150, 138, 135, 0) 100%
   );
   --cloud-blue: rgba(223, 237, 254, 1);
   --cloud-blue-gradient: linear-gradient(
     0deg,
     rgba(223, 237, 254, 1) 0%,
-    rgba(223, 237, 254, 0.8) 90%,
+    rgba(223, 237, 254, 0.9) 90%,
     rgba(223, 237, 254, 0) 100%
   );
   --spring-white: rgba(249, 245, 243, 1);
+  --construction-yellow: rgb(241, 198, 107);
+  --construction-yellow-gradient: linear-gradient(
+    0deg,
+    rgba(241, 198, 107, 1) 0%,
+    rgba(241, 198, 107, 0.9) 90%,
+    rgba(241, 198, 107, 0) 100%
+  );
+  --manhattan-blue: rgb(80, 122, 189);
+  --manhattan-blue-gradient: linear-gradient(
+    0deg,
+    rgba(80, 122, 189, 1) 0%,
+    rgba(80, 122, 189, 0.9) 90%,
+    rgba(80, 122, 189, 0) 100%
+  );
   --font-stack: "Whyte", Helvetica, Arial, sans-serif;
   --font-stack-header: "Whyte Inktrap", var(--font-stack);
 }
@@ -73,6 +87,11 @@ a {
   width: 50vw;
   position: fixed;
   padding: 2rem 0;
+  overflow-y: scroll;
+  margin-bottom: 8rem;
+  min-height:100%;
+  top: 0;
+  bottom: 0;
 }
 
 .panel--left {
@@ -91,11 +110,15 @@ main {
   opacity: 0;
   display: none;
   margin-top: -2rem;
+  padding-bottom: 8rem;
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
 
 footer {
   position: fixed;
-  opacity: 60%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -105,35 +128,38 @@ footer {
   padding: 0 2rem;
   background: var(--forest-green-gradient);
   transition: 0.2s all ease-out;
+  padding-top: 1rem;
 }
 
 body.left {
-  background: var(--cardboard-brown);
-  color: var(--forest-green);
+  background: var(--manhattan-blue);
+  color: var(--spring-white);
 }
 
 body.left footer {
-  background: var(--cardboard-brown-gradient-gradient);
+  background: var(--manhattan-blue-gradient);
+}
+
+body.left footer section {
+  opacity: 60%;
 }
 
 body.right {
-  background: var(--cloud-blue);
+  background: var(--construction-yellow);
   color: var(--forest-green);
 }
 
 body.right footer {
-  background: var(--cloud-blue-gradient);
+  background: var(--construction-yellow-gradient);
+}
+
+body.right footer section {
+  opacity: 60%;
 }
 
 footer section {
   flex: 1;
-}
-
-header {
-  /* position: absolute;
-  bottom: calc(8rem);
-  left: 0;
-  right: 0; */
+  /* transition: 0.01s ease-in; */
 }
 
 h1 {
@@ -142,7 +168,6 @@ h1 {
   margin-bottom: 1.25rem;
   font-family: var(--font-stack-header);
   letter-spacing: -4px;
-  /* margin-left: -0.7rem; */
 }
 
 h2 {

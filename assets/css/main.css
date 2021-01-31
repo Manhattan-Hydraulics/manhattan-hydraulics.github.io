@@ -72,8 +72,13 @@ body {
 
 a {
   color: currentColor;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
+  text-decoration: 1px underline dashed currentColor;
+  text-underline-offset: 2px;
+  padding-top: 10px;
+}
+
+strong {
+  font-weight: bold;
 }
 
 .container {
@@ -92,6 +97,10 @@ a {
   min-height: 100%;
   top: 0;
   bottom: 0;
+}
+
+.panel::-webkit-scrollbar {
+  display: none;
 }
 
 .panel header svg {
@@ -189,10 +198,24 @@ h1 {
 }
 
 h2 {
-  text-indent: 2rem;
+  /* text-indent: 2rem; */
   text-transform: uppercase;
   letter-spacing: 2%;
   margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+h2 + p, h2 + ul {
+  margin-left: 2rem;
+}
+
+main {
+  max-width: 80%;
+}
+
+ul li {
+  text-indent: -2rem;
+  margin-left: 2rem;
 }
 
 p,

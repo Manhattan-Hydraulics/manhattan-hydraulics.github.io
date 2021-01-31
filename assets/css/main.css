@@ -32,19 +32,19 @@
     rgba(223, 237, 254, 0) 100%
   );
   --spring-white: rgba(249, 245, 243, 1);
-  --construction-yellow: rgb(222, 197, 13);
-  --construction-yellow-gradient: linear-gradient(
+  --nqr-yellow: rgb(252, 204, 10);
+  --nqr-yellow-gradient: linear-gradient(
     0deg,
-    rgba(222, 197, 13) 0%,
-    rgba(222, 197, 13, 0.9) 90%,
-    rgba(222, 197, 13, 0) 100%
+    rgba(252, 204, 10) 0%,
+    rgba(252, 204, 10, 0.9) 90%,
+    rgba(252, 204, 10, 0) 100%
   );
-  --manhattan-blue: rgb(62, 111, 190);
-  --manhattan-blue-gradient: linear-gradient(
+  --ace-blue: rgb(0, 56, 166);
+  --ace-blue-gradient: linear-gradient(
     0deg,
-    rgba(62, 111, 190, 1) 0%,
-    rgba(62, 111, 190, 0.9) 90%,
-    rgba(62, 111, 190, 0) 100%
+    rgba(0, 56, 166, 1) 0%,
+    rgba(0, 56, 166, 0.9) 90%,
+    rgba(0, 56, 166, 0) 100%
   );
   --font-stack: "Whyte", Helvetica, Arial, sans-serif;
   --font-stack-header: "Whyte Inktrap", var(--font-stack);
@@ -156,12 +156,12 @@ footer {
 }
 
 body.left {
-  background: var(--manhattan-blue);
+  background: var(--ace-blue);
   color: var(--spring-white);
 }
 
 body.left footer {
-  background: var(--manhattan-blue-gradient);
+  background: var(--ace-blue-gradient);
 }
 
 body.left footer section {
@@ -169,12 +169,12 @@ body.left footer section {
 }
 
 body.right {
-  background: var(--construction-yellow);
+  background: var(--nqr-yellow);
   color: var(--forest-green);
 }
 
 body.right footer {
-  background: var(--construction-yellow-gradient);
+  background: var(--nqr-yellow-gradient);
 }
 
 body.right footer section {

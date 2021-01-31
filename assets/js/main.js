@@ -167,6 +167,18 @@ $(document).ready(function () {
       $(site.ui.currentTime).text(`${formattedTime} EST`);
     },
 
+    equalHeight: function (group) {
+        //group.css('height','auto');
+        var tallest = 0;
+        group.each(function() {
+           var thisHeight = $(this).height();
+           if(thisHeight > tallest) {
+              tallest = thisHeight;
+           }
+        });
+        group.height(tallest);
+    },
+
     init: function () {
       this.setCurrentTime();
       setTimeout(this.setCurrentTime, 1000);
@@ -174,6 +186,7 @@ $(document).ready(function () {
       this.getSizes();
       this.bindEvents();
       this.setPositions();
+      this.equalHeight($('.panel header svg'))
     },
 
     resizeTimer: null,

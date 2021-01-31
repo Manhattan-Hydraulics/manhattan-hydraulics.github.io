@@ -103,8 +103,14 @@ strong {
   display: none;
 }
 
+.panel header {
+  display: flex;
+}
+
 .panel header svg {
   padding-top: 2rem;
+  max-height: 8rem;
+  max-width: 80%;
 }
 
 .panel--left {
@@ -117,18 +123,18 @@ strong {
   padding-bottom: 1.25rem;
 }
 
-.panel--left header svg {
+/* .panel--left header svg {
   height: 6.3rem;
-}
+} */
 
 .panel--right {
   padding-right: 2rem;
   right: 0;
 }
-
+/*
 .panel--right header svg {
   height: 7.8rem;
-}
+} */
 
 main {
   opacity: 0;
@@ -205,12 +211,19 @@ h2 {
   font-weight: 600;
 }
 
-h2 + p, h2 + ul {
+h2 + p,
+h2 + ul {
   margin-left: 2rem;
 }
 
 main {
   max-width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    max-width: 95%;
+  }
 }
 
 ul li {

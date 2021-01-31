@@ -36,6 +36,7 @@ $(document).ready(function () {
       panels: $(".panel"),
       headers: $("header"),
       footer: $("footer"),
+      currentTime: $(".current-time"),
       leftPanel: {
         el: $(".panel--left"),
         key: "left",
@@ -53,10 +54,10 @@ $(document).ready(function () {
     sizes: {},
 
     ix: {
-      // handleMouseLeave: function () {
-      //   this.closePanel(site.ui.leftPanel.el);
-      //   this.closePanel(site.ui.rightPanel.el);
-      // },
+      handleMouseLeave: function () {
+        this.closePanel(site.ui.leftPanel.el);
+        this.closePanel(site.ui.rightPanel.el);
+      },
 
       handlePanelHover: function (panel) {
         this.openPanel(panel);
@@ -155,7 +156,20 @@ $(document).ready(function () {
           : "mouse";
     },
 
+    setCurrentTime: function () {
+      var time = new Date();
+      var formattedTime = time.toLocaleString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+        timeZone: "America/New_York",
+      });
+      $(site.ui.currentTime).text(`${formattedTime} EST`);
+    },
+
     init: function () {
+      this.setCurrentTime();
+      setTimeout(this.setCurrentTime, 1000);
       this.checkMediaQuery();
       this.getSizes();
       this.bindEvents();

@@ -32,19 +32,19 @@
     rgba(223, 237, 254, 0) 100%
   );
   --spring-white: rgba(249, 245, 243, 1);
-  --construction-yellow: rgb(241, 198, 107);
+  --construction-yellow: rgb(222, 197, 13);
   --construction-yellow-gradient: linear-gradient(
     0deg,
-    rgba(241, 198, 107, 1) 0%,
-    rgba(241, 198, 107, 0.9) 90%,
-    rgba(241, 198, 107, 0) 100%
+    rgba(222, 197, 13) 0%,
+    rgba(222, 197, 13, 0.9) 90%,
+    rgba(222, 197, 13, 0) 100%
   );
-  --manhattan-blue: rgb(80, 122, 189);
+  --manhattan-blue: rgb(62, 111, 190);
   --manhattan-blue-gradient: linear-gradient(
     0deg,
-    rgba(80, 122, 189, 1) 0%,
-    rgba(80, 122, 189, 0.9) 90%,
-    rgba(80, 122, 189, 0) 100%
+    rgba(62, 111, 190, 1) 0%,
+    rgba(62, 111, 190, 0.9) 90%,
+    rgba(62, 111, 190, 0) 100%
   );
   --font-stack: "Whyte", Helvetica, Arial, sans-serif;
   --font-stack-header: "Whyte Inktrap", var(--font-stack);
@@ -55,19 +55,19 @@ body {
   color: var(--spring-white);
   font: 18px var(--font-stack);
   letter-spacing: -2%;
-  transition: 0.2s all ease-out;
+  transition: 0.1s all ease-out;
   line-height: 1.75rem;
 
-  /* -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "zero" 1, "calt" 1;
+  -moz-font-feature-settings: "kern" 1, "liga" 1, "zero" 1, "calt" 1;
+  -o-font-feature-settings: "kern" 1, "liga" 1, "zero" 1, "calt" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "zero" 1, "calt" 1;
   font-kerning: normal;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility; */
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -84,26 +84,40 @@ a {
 }
 
 .panel {
-  width: 50vw;
+  width: calc(50vw - 2rem);
   position: fixed;
   padding: 2rem 0;
   overflow-y: scroll;
   margin-bottom: 8rem;
-  min-height:100%;
+  min-height: 100%;
   top: 0;
   bottom: 0;
+}
+
+.panel header svg {
+  padding-top: 2rem;
 }
 
 .panel--left {
   padding-left: 2rem;
   left: 0;
-  right: 50vw;
+}
+
+.panel--left header, .panel--right header {
+  padding-bottom: 1.25rem;
+}
+
+.panel--left header svg {
+  height: 6.3rem;
 }
 
 .panel--right {
   padding-right: 2rem;
-  left: 50vw;
   right: 0;
+}
+
+.panel--right header svg {
+  height: 7.8rem;
 }
 
 main {
@@ -127,7 +141,7 @@ footer {
   flex-direction: row;
   padding: 0 2rem;
   background: var(--forest-green-gradient);
-  transition: 0.2s all ease-out;
+  transition: 0.1s all ease-out;
   padding-top: 1rem;
 }
 
@@ -159,7 +173,10 @@ body.right footer section {
 
 footer section {
   flex: 1;
-  /* transition: 0.01s ease-in; */
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
 }
 
 h1 {

@@ -1,17 +1,13 @@
 
 
-We launch digital products for early-to-mid stage startups and industry leaders.
-We approach technical challenges with strategy, design, and a little bit of
-levitity. We pride ourselves on being collaborative, proficient, and adaptive.
+**We design and ship outstanding digital products**. Whether you've got a napkin sketch or a scaled product, we'll help you launch simple, easy to use experiences from end-to-end. Our process is straightforward, proven, and — most importantly — fun.
 
-Our clients come to us:
+**We pride ourselves on being kind, collaborative, technically skilled, and adaptive to change. We work with clients to:**
 ## Launch a new product
-Bring your next idea to life. We’ll start by understanding your goals and
-problem space. You’ll be a part of our design process.
+Bring your next idea to life. We'll work with you from day one to bring your raw idea into clear focus, then collaboratively design a seamless product.
 
-## Improve an existing product
-Discover your next new offering. We’ll unpack your strategy, prioritize what
-needs to be done, and dive into the work.
+## Iterate on an existing product
+We’ll unpack opportunities to improve your product, and work with you to prioritize and design them.
 
 ## Augment your team
-Hire an in-house design team to move your product forward.
+We'll embed ourselves within your company to solve tough problems, and move your product forward, alongside your entire team.

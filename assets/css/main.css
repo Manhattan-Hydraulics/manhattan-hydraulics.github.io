@@ -78,7 +78,7 @@ a {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .container {
@@ -202,7 +202,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2%;
   margin-bottom: 0.25rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h2 + p, h2 + ul {

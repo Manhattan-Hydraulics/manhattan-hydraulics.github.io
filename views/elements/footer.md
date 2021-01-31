@@ -3,6 +3,6 @@
 {% include 'footer/left.md' %}
 </section>
 <section class="footer--right">
-{% include 'footer/right.md' %}
+{% include 'footer/right.html' %}
 </section>
 </footer>

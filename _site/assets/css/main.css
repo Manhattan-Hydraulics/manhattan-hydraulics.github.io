@@ -103,7 +103,8 @@ a {
   left: 0;
 }
 
-.panel--left header, .panel--right header {
+.panel--left header,
+.panel--right header {
   padding-bottom: 1.25rem;
 }
 
@@ -199,6 +200,18 @@ ul {
   margin-bottom: 1.25rem;
 }
 
-footer p {
+footer p,
+footer ul {
   margin-bottom: 0.25rem;
+}
+
+.footer--right {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer--right div {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
 }

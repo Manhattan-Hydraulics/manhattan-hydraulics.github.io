@@ -1,7 +1,9 @@
 # Manhattan Hydraulics Web Site ™
 
 🚨 Pushing directly to `main` branch will deploy the website, so do this with care. When in doubt, create a new branch and submit a PR.
+
 🚨 When creating a new feature branch for a PR, please create the branch off of the MAIN branch, NOT `gh-pages`.
+
 🙇‍♂️ If you don't want to make changes yourself, create a [Github Issue](https://github.com/Manhattan-Hydraulics/site/issues/new) with a descriptive change request, or post in Twist.
 
 ## Tech overview

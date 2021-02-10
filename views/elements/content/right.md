@@ -10,4 +10,4 @@ You have a vision for a new product. We'll bring it into clear focus, then colla
 You want to improve your current product. We’ll unpack the opportunity, shape it into a tangible outcome, then design it.
 
 ## Augment your team
-You need an interim product design team. We'll embed ourselves within your company to solve tough problems.
+You need an in-house product design team, or to add new minds to your existing team. We'll embed ourselves within your company to solve tough problems.

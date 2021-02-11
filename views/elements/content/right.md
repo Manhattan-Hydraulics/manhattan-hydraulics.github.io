@@ -11,3 +11,5 @@ We’ll unpack opportunities to improve your product, and work with you to prior
 
 ## Augment your team
 We'll embed ourselves within your company to solve tough problems, and move your product forward, alongside your entire team.
+
+Shouts to our sister studios [Sanctuary Computer](https://www.sanctuary.computer) and [XXIX](https://www.xxix.co).

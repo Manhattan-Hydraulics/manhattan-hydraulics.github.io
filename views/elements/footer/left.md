@@ -1,4 +1,4 @@
 
-A high-precision design studio.
+A down-to-earth product studio.
 
-Let's chat: [**hi@manhattanhydraulics.com**](mailto:hi@manhattanhydraulics.com)
+Let's chat: [**hello@hydraulics.nyc**](mailto:hello@hydraulics.nyc)

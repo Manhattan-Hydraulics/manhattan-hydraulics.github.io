@@ -4,10 +4,10 @@
 
 **We pride ourselves on being kind, collaborative, technically skilled, and adaptive to change. We work with clients to:**
 ## Launch a new product
-Bring your next idea to life. We'll work with you from day one to bring your raw idea into clear focus, then collaboratively design a seamless product.
+You have a vision for a new product. We'll bring it into clear focus, then collaboratively design a seamless product.
 
 ## Iterate on an existing product
-We’ll unpack opportunities to improve your product, and work with you to prioritize and design them.
+You want to improve your current product. We’ll unpack the opportunity, shape it into a tangible outcome, then design it.
 
 ## Augment your team
-We'll embed ourselves within your company to solve tough problems, and move your product forward, alongside your entire team.
+You need an in-house product design team, or to add new minds to your existing team. We'll embed ourselves within your company to solve tough problems.

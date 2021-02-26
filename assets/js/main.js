@@ -15,20 +15,11 @@ team who might be new to javascript.
 **********************************************/
 
 $(document).ready(function () {
-  var theme = {
-    forestGreen: "#181514",
-    cardboardBrown: "#968a87",
-    cloudBlue: "#DEEDFE",
-    springWhite: "#f9f5f3",
-  };
-
   var site = {
     animationSettings: {
       speed: 240,
-      easing: "easeOutCirc",
+      easing: "swing",
     },
-
-    settings: {},
 
     ui: {
       body: $("body"),
@@ -40,20 +31,18 @@ $(document).ready(function () {
       leftPanel: {
         el: $(".panel--left"),
         key: "left",
-        backgroundColor: theme.cardboardBrown,
-        color: theme.forestGreen,
       },
       rightPanel: {
         el: $(".panel--right"),
         key: "right",
-        backgroundColor: theme.cloudBlue,
-        color: theme.forestGreen,
       },
     },
 
     sizes: {},
 
     ix: {
+      enabled: true,
+
       handleMouseLeave: function () {
         this.closePanel(site.ui.leftPanel.el);
         this.closePanel(site.ui.rightPanel.el);
@@ -95,11 +84,14 @@ $(document).ready(function () {
       },
 
       closePanel: function (panel) {
-        $(panel).is(site.ui.leftPanel.el)
-          ? $(site.ui.body).removeClass("left")
-          : $(site.ui.body).removeClass("right");
+        if ($(panel).is(site.ui.leftPanel.el)) {
+          $(site.ui.body).removeClass("left");
+        } else {
+          $(site.ui.body).removeClass("right");
+        }
+
         $(panel)
-          .stop(true)
+          .stop()
           .animate(
             {
               "padding-top": site.sizes.headerHeight,
@@ -132,28 +124,14 @@ $(document).ready(function () {
         (site.ui.footer.outerHeight() + site.ui.headers.outerHeight());
     },
 
-    checkMediaQuery: function () {
-      if (!$(".media-check").length) {
-        $("body").append('<div class="media-check"></div>');
+    checkIfMobile: function () {
+      if (site.sizes.winWidth <= 767) {
+        site.ix.enabled = false;
+        return true;
+      } else {
+        site.ix.enabled = true;
+        return false;
       }
-      var mediaCheck = $(".media-check").css("text-indent");
-      // if (mediaCheck === "10px") {
-      //   a.sizes.media = "mobile";
-      // } else if (mediaCheck === "20px") {
-      //   a.sizes.media = "tablet";
-      // } else if (mediaCheck === "30px") {
-      //   a.sizes.media = "desktop";
-      // } else if (mediaCheck === "40px") {
-      //   a.sizes.media = "xl";
-      // } else if (mediaCheck === "50px") {
-      //   a.sizes.media = "xxl";
-      // } else {
-      //   a.sizes.media = "unsure";
-      // }
-      site.settings.screenType =
-        $("html").hasClass("mobile") || $("html").hasClass("tablet")
-          ? "touch"
-          : "mouse";
     },
 
     setCurrentTime: function () {
@@ -168,35 +146,45 @@ $(document).ready(function () {
     },
 
     equalHeight: function (group) {
-        //group.css('height','auto');
-        var tallest = 0;
-        group.each(function() {
-           var thisHeight = $(this).height();
-           if(thisHeight > tallest) {
-              tallest = thisHeight;
-           }
-        });
-        group.height(tallest);
+      //group.css('height','auto');
+      var tallest = 0;
+      group.each(function () {
+        var thisHeight = $(this).height();
+        if (thisHeight > tallest) {
+          tallest = thisHeight;
+        }
+      });
+      group.height(tallest);
     },
 
     init: function () {
       this.setCurrentTime();
       setTimeout(this.setCurrentTime, 1000);
-      this.checkMediaQuery();
       this.getSizes();
-      this.bindEvents();
-      this.setPositions();
-      this.equalHeight($('.panel header svg'))
+      this.checkIfMobile();
+      this.ui.win.resize(this.resize);
+      if (site.ix.enabled) {
+        this.bindEvents();
+        this.setPositions();
+        this.equalHeight($(".panel header svg"));
+      }
     },
 
     resizeTimer: null,
     resize: function () {
+      console.log("test");
       clearTimeout(this.resizeTimer);
       this.resizeTimer = setTimeout(function () {
         site.getSizes();
-        // site.helpers.checkMediaQuery();
-        // Need to implement helper to switch to mobile
-        // interactions in site.ix.mobile or something
+        site.checkIfMobile();
+        if (site.ix.enabled) {
+          site.bindEvents();
+          site.setPositions();
+          site.equalHeight($(".panel header svg"));
+        } else {
+          site.unbindEvents();
+          $(".panel, main").removeAttr("style")
+        }
       }, 250);
     },
 
@@ -222,8 +210,17 @@ $(document).ready(function () {
           site.ix.handleMouseLeave(this);
         });
       });
+    },
 
-      this.ui.win.on("resize", this.resize);
+    unbindEvents: function () {
+      $.each([site.ui.leftPanel.el, site.ui.rightPanel.el], function () {
+        $(this)
+          .unbind("mouseenter").unbind("mouseleave")
+      });
+
+      $(site.ui.footer).unbind("mouseenter");
+
+      $(site.ui.body).unbind("mouseleave");
     },
 
     setPositions: function () {

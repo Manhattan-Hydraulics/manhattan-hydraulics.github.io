@@ -7,7 +7,53 @@
  for styling the Hydro website.
  */
 
-@import "fonts.css";
+ @font-face {
+  font-family: "Whyte Inktrap";
+  src: url("/assets/fonts/Whyte Inktrap Regular.woff2") format("woff2"),
+    url("/assets/fonts/Whyte Inktrap Regular.woff") format("woff"),
+    url("/assets/fonts/Whyte Inktrap Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Whyte Book';
+    src: local('Whyte Book'), local('Whyte-Book'),
+        url('assets/fonts/Whyte-Book.woff2') format('woff2'),
+        url('assets/fonts/Whyte-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    src: local('Whyte Light'), local('Whyte-Light'),
+        url('assets/fonts/Whyte-Light.woff2') format('woff2'),
+        url('assets/fonts/Whyte-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("/assets/fonts/Whyte Regular.woff2") format("woff2"),
+    url("/assets/fonts/Whyte Regular.woff") format("woff"),
+    url("/assets/fonts/Whyte Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Whyte";
+  src: url("/assets/fonts/Whyte Medium.woff2") format("woff2"),
+    url("/assets/fonts/Whyte Medium.woff") format("woff"),
+    url("/assets/fonts/Whyte Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+}
+
 
 :root {
   --black: rgba(24, 24, 24, 1);
@@ -110,6 +156,7 @@ strong {
   min-height: 100%;
   top: 0;
   bottom: 0;
+  /* will-change: padding-top; */
 }
 
 .panel::-webkit-scrollbar {
@@ -148,8 +195,9 @@ strong {
 main {
   opacity: 0;
   display: none;
-  margin-top: -2rem;
+  /* margin-top: -2rem; */
   padding-bottom: 8rem;
+  /* will-change: padding-top; */
 }
 
 main::-webkit-scrollbar {

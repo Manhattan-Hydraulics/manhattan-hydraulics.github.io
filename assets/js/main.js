@@ -74,7 +74,7 @@ $(document).ready(function () {
           .show()
           .animate(
             {
-              "margin-top": 0,
+              // "margin-top": 0,
               opacity: 1,
             },
             {
@@ -103,7 +103,7 @@ $(document).ready(function () {
           .find($("main"))
           .animate(
             {
-              "margin-top": 18,
+              // "margin-top": 18,
               opacity: 0,
             },
             {
@@ -198,29 +198,12 @@ $(document).ready(function () {
             site.ix.handlePanelLeave(this);
           });
       });
-
-      $(site.ui.footer).on("mouseenter", function () {
-        $.each([site.ui.leftPanel.el, site.ui.rightPanel.el], function () {
-          site.ix.handleMouseLeave(this);
-        });
-      });
-
-      $(site.ui.body).on("mouseleave", function () {
-        $.each([site.ui.leftPanel.el, site.ui.rightPanel.el], function () {
-          site.ix.handleMouseLeave(this);
-        });
-      });
     },
 
     unbindEvents: function () {
       $.each([site.ui.leftPanel.el, site.ui.rightPanel.el], function () {
-        $(this)
-          .unbind("mouseenter").unbind("mouseleave")
+        $(this).unbind("mouseenter").unbind("mouseleave");
       });
-
-      $(site.ui.footer).unbind("mouseenter");
-
-      $(site.ui.body).unbind("mouseleave");
     },
 
     setPositions: function () {

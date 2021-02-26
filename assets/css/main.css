@@ -205,6 +205,7 @@ strong {
 
 .panel header {
   display: flex;
+  /* padding-top: 100%; */
 }
 
 .panel header svg {

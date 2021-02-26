@@ -2,7 +2,9 @@
 
 **We design and ship outstanding digital products**. Whether you've got a napkin sketch or a scaled product, we'll help you launch simple, easy to use experiences from end-to-end. Our process is straightforward, proven, and — most importantly — fun.
 
-**We pride ourselves on being kind, collaborative, technically skilled, and adaptive to change. We work with clients to:**
+**We pride ourselves on being kind, collaborative, technically skilled, and adaptive to change.**
+
+**We work with clients to:**
 ## Launch a new product
 You have a vision for a new product. We'll bring it into clear focus, then collaboratively design a seamless product.
 

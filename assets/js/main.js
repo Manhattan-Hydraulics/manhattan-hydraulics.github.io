@@ -172,7 +172,6 @@ $(document).ready(function () {
 
     resizeTimer: null,
     resize: function () {
-      console.log("test");
       clearTimeout(this.resizeTimer);
       this.resizeTimer = setTimeout(function () {
         site.getSizes();
@@ -183,7 +182,7 @@ $(document).ready(function () {
           site.equalHeight($(".panel header svg"));
         } else {
           site.unbindEvents();
-          $(".panel, main").removeAttr("style")
+          $(".panel, main").removeAttr("style");
         }
       }, 250);
     },

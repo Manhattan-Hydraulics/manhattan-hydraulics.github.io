@@ -294,11 +294,11 @@ footer section {
 }
 
 h1 {
-  font-size: 8vw;
-  line-height: 140%;
+  /* font-size: 8vw;
+  line-height: 140%; */
   margin-bottom: 1.25rem;
-  font-family: var(--font-stack-header);
-  letter-spacing: -4px;
+  /* font-family: var(--font-stack-header); */
+  /* letter-spacing: -4px; */
 }
 
 h2 {

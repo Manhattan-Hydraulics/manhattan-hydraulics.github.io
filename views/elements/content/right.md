@@ -13,3 +13,6 @@ You want to improve your current product. We’ll unpack the opportunity, shape 
 
 ## Augment your team
 You need an in-house product design team, or to add new minds to your existing team. We'll embed ourselves within your company to solve tough problems.
+
+
+Shouts to our sister studios [Sanctuary Computer](https://www.sanctuary.computer) and [XXIX](https://www.xxix.co).

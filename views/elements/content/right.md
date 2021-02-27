@@ -1,6 +1,8 @@
 
 
-**We design and ship outstanding digital products**. Whether you've got a napkin sketch or a scaled product, we'll help you launch simple, easy to use experiences from end-to-end. Our process is straightforward, proven, and — most importantly — fun.
+# **We design and ship outstanding digital products**.
+
+Whether you've got a napkin sketch or a scaled product, we'll help you launch simple, easy to use experiences from end-to-end. Our process is straightforward, proven, and — most importantly — fun.
 
 **We pride ourselves on being kind, collaborative, technically skilled, and adaptive to change.**
 

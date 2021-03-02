@@ -200,10 +200,13 @@ strong {
   min-height: 100%;
   top: 0;
   bottom: 0;
-  /* will-change: padding-top; */
+  /* HIDE SCROLLBARS */
+  scrollbar-width: none; /*FireFox*/
+  -ms-overflow-style: -ms-autohiding-scrollbar; /*IE10+*/
 }
 
 .panel::-webkit-scrollbar {
+  /* HIDE SCROLLBARS SAFARI + CHROME */
   display: none;
 }
 

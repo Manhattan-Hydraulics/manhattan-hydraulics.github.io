@@ -377,6 +377,10 @@ main {
     padding-bottom: 2rem;
   }
 
+  .panel main {
+    opacity: 1;
+  }
+
   .footer--full {
     display: block;
     position: fixed;

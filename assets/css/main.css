@@ -169,9 +169,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+* {
+  letter-spacing: -0.02em;
+}
+
 a {
   color: currentColor;
-  text-decoration: 1px underline dashed currentColor;
+  text-decoration: 1px underline currentColor;
   text-underline-offset: 2px;
   padding-top: 10px;
 }
@@ -268,10 +272,6 @@ body.left footer {
   background: var(--black-gradient);
 }
 
-body.left footer section {
-  opacity: 60%;
-}
-
 body.right {
   background: var(--black);
   color: var(--spring-white);
@@ -279,10 +279,6 @@ body.right {
 
 body.right footer {
   background: var(--black-gradient);
-}
-
-body.right footer section {
-  opacity: 60%;
 }
 
 footer section {
@@ -303,9 +299,9 @@ h1 {
 
 h2 {
   /* text-indent: 2rem; */
-  text-transform: uppercase;
-  letter-spacing: 2%;
-  margin-bottom: 0.25rem;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 2%; */
+  margin-bottom: 0.15rem;
   font-weight: 500;
 }
 
@@ -315,7 +311,8 @@ h2 + ul {
 } */
 
 main {
-  max-width: 80%;
+  width: 80%;
+  max-width: 650px;
 }
 
 .footer--full {
@@ -332,6 +329,7 @@ main {
   body {
     background-color: var(--black);
     color: var(--spring-white);
+    font-size: 16px;
   }
 
   footer {
@@ -381,8 +379,8 @@ main {
 }
 
 main ul li {
-  text-indent: -10px;
-  margin-left: 10px;
+  text-indent: -16px;
+  margin-left: 16px;
   /* display: flex;
   align-items: flex-start;
   flex-direction: row; */
@@ -391,11 +389,10 @@ main ul li {
 main ul li:before {
   content: '';
   display: inline-block;
-  width: 4px;
-  height: 4px;
+  width: 10px;
+  height: 1px;
   margin-bottom: 4px;
   background: currentColor;
-  border-radius: 100%;
   margin-right: 6px;
 }
 

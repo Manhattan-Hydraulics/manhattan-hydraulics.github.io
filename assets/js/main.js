@@ -27,7 +27,6 @@ $(document).ready(function () {
       panels: $(".panel"),
       headers: $("header"),
       footer: $("footer"),
-      currentTime: $(".current-time"),
       leftPanel: {
         el: $(".panel--left"),
         key: "left",
@@ -134,17 +133,6 @@ $(document).ready(function () {
       }
     },
 
-    setCurrentTime: function () {
-      var time = new Date();
-      var formattedTime = time.toLocaleString("en-US", {
-        hour: "numeric",
-        minute: "numeric",
-        hour12: true,
-        timeZone: "America/New_York",
-      });
-      $(site.ui.currentTime).text(`${formattedTime} EST`);
-    },
-
     equalHeight: function (group) {
       //group.css('height','auto');
       var tallest = 0;
@@ -158,8 +146,6 @@ $(document).ready(function () {
     },
 
     init: function () {
-      this.setCurrentTime();
-      setTimeout(this.setCurrentTime, 1000);
       this.getSizes();
       this.checkIfMobile();
       this.ui.win.resize(this.resize);

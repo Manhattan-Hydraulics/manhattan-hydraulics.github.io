@@ -69,17 +69,6 @@ $(document).ready(function () {
               duration: site.animationSettings.speed,
             }
           )
-          .find($("main"))
-          .show()
-          .animate(
-            {
-              // "margin-top": 0,
-              opacity: 1,
-            },
-            {
-              duration: site.animationSettings.speed,
-            }
-          );
       },
 
       closePanel: function (panel) {
@@ -99,19 +88,6 @@ $(document).ready(function () {
               duration: site.animationSettings.speed,
             }
           )
-          .find($("main"))
-          .animate(
-            {
-              // "margin-top": 18,
-              opacity: 0,
-            },
-            {
-              duration: site.animationSettings.speed,
-              complete: function () {
-                $(this).hide();
-              },
-            }
-          );
       },
     },
 

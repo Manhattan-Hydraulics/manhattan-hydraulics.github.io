@@ -205,6 +205,26 @@ strong {
   -ms-overflow-style: -ms-autohiding-scrollbar; /*IE10+*/
 }
 
+main {
+  opacity: 0;
+  /* display: none; */
+  /* margin-top: -2rem; */
+  padding-bottom: 8rem;
+}
+
+.panel main {
+  transition: opacity 0.26s ease-in;
+  opacity: 0;
+  /* display: none; */
+  /* margin-top: -2rem; */
+  padding-bottom: 8rem;
+  will-change: opacity;
+}
+
+.panel:hover main {
+  opacity: 1;
+}
+
 .panel::-webkit-scrollbar {
   /* HIDE SCROLLBARS SAFARI + CHROME */
   display: none;
@@ -240,13 +260,7 @@ strong {
   right: 0;
 }
 
-main {
-  opacity: 0;
-  display: none;
-  /* margin-top: -2rem; */
-  padding-bottom: 8rem;
-  /* will-change: padding-top; */
-}
+
 
 main::-webkit-scrollbar {
   display: none;

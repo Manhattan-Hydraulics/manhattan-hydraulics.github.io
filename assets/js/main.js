@@ -96,7 +96,7 @@ $(document).ready(function () {
       site.sizes.winHeight = site.ui.win.height();
       site.sizes.headerHeight =
         site.sizes.winHeight -
-        (site.ui.footer.outerHeight() + site.ui.headers.outerHeight());
+        (site.ui.footer.height() + site.ui.headers.height());
     },
 
     checkIfMobile: function () {

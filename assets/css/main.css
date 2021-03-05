@@ -193,27 +193,6 @@ ul {
     hsla(0, 0%, 9%, 0.013) 91.9%,
     hsla(0, 0%, 9%, 0) 100%
   );
-  --forest-green: rgba(24, 21, 20, 1);
-  --forest-green-gradient: linear-gradient(
-    0deg,
-    rgba(24, 21, 20, 1) 0%,
-    rgba(24, 21, 20, 0.8) 90%,
-    rgba(24, 21, 20, 0) 100%
-  );
-  --cardboard-brown: rgba(150, 138, 135, 1);
-  --cardboard-brown-gradient: linear-gradient(
-    0deg,
-    rgba(150, 138, 135, 1) 0%,
-    rgba(150, 138, 135, 0.9) 90%,
-    rgba(150, 138, 135, 0) 100%
-  );
-  --cloud-blue: rgba(223, 237, 254, 1);
-  --cloud-blue-gradient: linear-gradient(
-    0deg,
-    rgba(223, 237, 254, 1) 0%,
-    rgba(223, 237, 254, 0.9) 90%,
-    rgba(223, 237, 254, 0) 100%
-  );
   --spring-white: #f9f5f3;
   --spring-white-gradient: linear-gradient(
     to top,
@@ -233,20 +212,6 @@ ul {
     hsla(20, 33%, 96%, 0.049) 84.5%,
     hsla(20, 33%, 96%, 0.013) 91.9%,
     hsla(20, 33%, 96%, 0) 100%
-  );
-  --nqr-yellow: rgb(252, 204, 10);
-  --nqr-yellow-gradient: linear-gradient(
-    0deg,
-    rgba(252, 204, 10) 0%,
-    rgba(252, 204, 10, 0.9) 90%,
-    rgba(252, 204, 10, 0) 100%
-  );
-  --ace-blue: rgb(0, 56, 166);
-  --ace-blue-gradient: linear-gradient(
-    0deg,
-    rgba(0, 56, 166, 1) 0%,
-    rgba(0, 56, 166, 0.9) 90%,
-    rgba(0, 56, 166, 0) 100%
   );
   --font-stack: "Whyte", Helvetica, Arial, sans-serif;
   --font-stack-header: "Whyte Inktrap", var(--font-stack);
@@ -521,9 +486,6 @@ main {
 main ul li {
   text-indent: -16px;
   margin-left: 16px;
-  /* display: flex;
-  align-items: flex-start;
-  flex-direction: row; */
 }
 
 main ul li:before {

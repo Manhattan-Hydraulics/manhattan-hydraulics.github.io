@@ -410,7 +410,7 @@ footer {
 body {
   transition: background-color 240ms ease-in-out, color 240ms ease-in-out;
   transition-delay: 100ms;
-  will-change: background-color color;
+  will-change: background-color, color;
 }
 
 body.left {

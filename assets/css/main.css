@@ -12,66 +12,144 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
- @font-face {
+@font-face {
   font-family: "Whyte Inktrap";
   src: url("/assets/fonts/Whyte Inktrap Regular.woff2") format("woff2"),
     url("/assets/fonts/Whyte Inktrap Regular.woff") format("woff"),
     url("/assets/fonts/Whyte Inktrap Regular.otf") format("opentype");
   font-style: normal;
   font-weight: 400;
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Whyte Book';
-    src: local('Whyte Book'), local('Whyte-Book'),
-        url('assets/fonts/Whyte-Book.woff2') format('woff2'),
-        url('assets/fonts/Whyte-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Whyte Book";
+  src: local("Whyte Book"), local("Whyte-Book"),
+    url("assets/fonts/Whyte-Book.woff2") format("woff2"),
+    url("assets/fonts/Whyte-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Whyte';
-    src: local('Whyte Light'), local('Whyte-Light'),
-        url('assets/fonts/Whyte-Light.woff2') format('woff2'),
-        url('assets/fonts/Whyte-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Whyte";
+  src: local("Whyte Light"), local("Whyte-Light"),
+    url("assets/fonts/Whyte-Light.woff2") format("woff2"),
+    url("assets/fonts/Whyte-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -81,7 +159,7 @@ ol, ul {
     url("/assets/fonts/Whyte Regular.otf") format("opentype");
   font-style: normal;
   font-weight: 400;
-  font-display: swap
+  font-display: swap;
 }
 
 @font-face {
@@ -91,17 +169,29 @@ ol, ul {
     url("/assets/fonts/Whyte Medium.otf") format("opentype");
   font-style: normal;
   font-weight: 500;
-  font-display: swap
+  font-display: swap;
 }
 
-
 :root {
-  --black: rgba(24, 24, 24, 1);
+  --black: hsl(0, 0%, 9%);
   --black-gradient: linear-gradient(
-    0deg,
-    rgba(24, 24, 24, 1) 0%,
-    rgba(24, 24, 24, 0.8) 90%,
-    rgba(24, 24, 24, 0) 100%
+    to top,
+    hsl(0, 0%, 9%) 0%,
+    hsla(0, 0%, 9%, 0.987) 8.1%,
+    hsla(0, 0%, 9%, 0.951) 15.5%,
+    hsla(0, 0%, 9%, 0.896) 22.5%,
+    hsla(0, 0%, 9%, 0.825) 29%,
+    hsla(0, 0%, 9%, 0.741) 35.3%,
+    hsla(0, 0%, 9%, 0.648) 41.2%,
+    hsla(0, 0%, 9%, 0.55) 47.1%,
+    hsla(0, 0%, 9%, 0.45) 52.9%,
+    hsla(0, 0%, 9%, 0.352) 58.8%,
+    hsla(0, 0%, 9%, 0.259) 64.7%,
+    hsla(0, 0%, 9%, 0.175) 71%,
+    hsla(0, 0%, 9%, 0.104) 77.5%,
+    hsla(0, 0%, 9%, 0.049) 84.5%,
+    hsla(0, 0%, 9%, 0.013) 91.9%,
+    hsla(0, 0%, 9%, 0) 100%
   );
   --forest-green: rgba(24, 21, 20, 1);
   --forest-green-gradient: linear-gradient(
@@ -124,12 +214,25 @@ ol, ul {
     rgba(223, 237, 254, 0.9) 90%,
     rgba(223, 237, 254, 0) 100%
   );
-  --spring-white: rgba(249, 245, 243, 1);
+  --spring-white: #f9f5f3;
   --spring-white-gradient: linear-gradient(
-    0deg,
-    rgba(249, 245, 243, 1) 0%,
-    rgba(249, 245, 243, 0.8) 90%,
-    rgba(249, 245, 243, 0) 100%
+    to top,
+    hsl(20, 33%, 96%) 0%,
+    hsla(20, 33%, 96%, 0.987) 8.1%,
+    hsla(20, 33%, 96%, 0.951) 15.5%,
+    hsla(20, 33%, 96%, 0.896) 22.5%,
+    hsla(20, 33%, 96%, 0.825) 29%,
+    hsla(20, 33%, 96%, 0.741) 35.3%,
+    hsla(20, 33%, 96%, 0.648) 41.2%,
+    hsla(20, 33%, 96%, 0.55) 47.1%,
+    hsla(20, 33%, 96%, 0.45) 52.9%,
+    hsla(20, 33%, 96%, 0.352) 58.8%,
+    hsla(20, 33%, 96%, 0.259) 64.7%,
+    hsla(20, 33%, 96%, 0.175) 71%,
+    hsla(20, 33%, 96%, 0.104) 77.5%,
+    hsla(20, 33%, 96%, 0.049) 84.5%,
+    hsla(20, 33%, 96%, 0.013) 91.9%,
+    hsla(20, 33%, 96%, 0) 100%
   );
   --nqr-yellow: rgb(252, 204, 10);
   --nqr-yellow-gradient: linear-gradient(
@@ -209,7 +312,7 @@ main {
   opacity: 0;
   /* display: none; */
   /* margin-top: -2rem; */
-  padding-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .panel main {
@@ -219,6 +322,32 @@ main {
   /* margin-top: -2rem; */
   padding-bottom: 8rem;
   will-change: opacity;
+  position: relative;
+}
+
+.panel.panel--left:hover main:before {
+    content: '';
+    width: inherit;
+    height: 16rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--black-gradient);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.panel.panel--right:hover main:before {
+    content: '';
+    width: inherit;
+    height: 18rem;
+    position: fixed;
+    bottom: 0;
+    /* right: 0; */
+    background: var(--black-gradient);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .panel:hover main {
@@ -233,6 +362,7 @@ main {
 .panel header {
   display: flex;
   /* padding-top: 100%; */
+  z-index: 2;
 }
 
 .panel header svg {
@@ -260,8 +390,6 @@ main {
   right: 0;
 }
 
-
-
 main::-webkit-scrollbar {
   display: none;
 }
@@ -275,7 +403,6 @@ footer {
   display: flex;
   flex-direction: row;
   padding: 0 2rem;
-  background: var(--spring-white-gradient);
   transition: 0.1s all ease-out;
   padding-top: 1rem;
 }
@@ -285,17 +412,9 @@ body.left {
   color: var(--spring-white);
 }
 
-body.left footer {
-  background: var(--black-gradient);
-}
-
 body.right {
   background: var(--black);
   color: var(--spring-white);
-}
-
-body.right footer {
-  background: var(--black-gradient);
 }
 
 footer section {
@@ -304,6 +423,7 @@ footer section {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
+  z-index: 2;
 }
 
 h1 {
@@ -390,7 +510,8 @@ main {
     right: 1rem;
   }
 
-  .footer--left, .footer--right {
+  .footer--left,
+  .footer--right {
     display: none;
   }
 
@@ -408,7 +529,7 @@ main ul li {
 }
 
 main ul li:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 10px;
   height: 1px;

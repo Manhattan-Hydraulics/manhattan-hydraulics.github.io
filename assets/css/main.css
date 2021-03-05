@@ -316,11 +316,12 @@ main {
 }
 
 .panel main {
-  transition: opacity 0.26s ease-in;
+  transition: opacity 240ms ease-in-out;
+  transition-delay: 340ms;
   opacity: 0;
   /* display: none; */
   /* margin-top: -2rem; */
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
   will-change: opacity;
   position: relative;
 }

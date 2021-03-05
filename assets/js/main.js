@@ -15,10 +15,17 @@ team who might be new to javascript.
 **********************************************/
 
 $(document).ready(function () {
+  $.easing = Object.assign({}, $.easing, {
+    easeInOutCirc: function (x, t, b, c, d) {
+      if ((t /= d / 2) < 1) return (-c / 2) * (Math.sqrt(1 - t * t) - 1) + b;
+      return (c / 2) * (Math.sqrt(1 - (t -= 2) * t) + 1) + b;
+    },
+  });
+
   var site = {
     animationSettings: {
-      speed: 240,
-      easing: "swing",
+      speed: 360,
+      easing: "easeInOutCirc",
     },
 
     ui: {
@@ -59,16 +66,15 @@ $(document).ready(function () {
         $(panel).is(site.ui.leftPanel.el)
           ? $(site.ui.body).addClass("left")
           : $(site.ui.body).addClass("right");
-        $(panel)
-          .animate(
-            {
-              "padding-top": 0,
-            },
-            {
-              easing: site.animationSettings.easing,
-              duration: site.animationSettings.speed,
-            }
-          )
+        $(panel).animate(
+          {
+            "padding-top": 0,
+          },
+          {
+            easing: site.animationSettings.easing,
+            duration: site.animationSettings.speed,
+          }
+        );
       },
 
       closePanel: function (panel) {
@@ -78,16 +84,14 @@ $(document).ready(function () {
           $(site.ui.body).removeClass("right");
         }
 
-        $(panel)
-          .stop()
-          .animate(
-            {
-              "padding-top": site.sizes.headerHeight,
-            },
-            {
-              duration: site.animationSettings.speed,
-            }
-          )
+        $(panel).stop().animate(
+          {
+            "padding-top": site.sizes.headerHeight,
+          },
+          {
+            duration: site.animationSettings.speed,
+          }
+        );
       },
     },
 

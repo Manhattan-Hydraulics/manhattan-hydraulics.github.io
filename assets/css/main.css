@@ -278,9 +278,9 @@ body {
 
 a {
   color: currentColor;
-  text-decoration: 1px underline currentColor;
-  text-underline-offset: 2px;
-  padding-top: 10px;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: .0.5rem;
+  text-underline-offset: 4px;
 }
 
 strong {
@@ -317,7 +317,7 @@ main {
 
 .panel main {
   transition: opacity 240ms ease-in-out;
-  transition-delay: 340ms;
+  transition-delay: 100ms;
   opacity: 0;
   /* display: none; */
   /* margin-top: -2rem; */

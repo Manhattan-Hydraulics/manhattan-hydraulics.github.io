@@ -538,6 +538,15 @@ main ul li:before {
   margin-right: 6px;
 }
 
+.panel--header main ul li {
+  text-indent: 0;
+  margin-left: 0;
+}
+
+.panel--header main ul li:before {
+  display: none;
+}
+
 p,
 ul {
   margin-bottom: 1.25rem;

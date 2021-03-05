@@ -328,8 +328,7 @@ main {
 
 .panel.panel--left main:before,
 .panel.panel--right main:before {
-  transition: opacity 240ms ease-in-out;
-  transition-delay: 100ms;
+  transition: opacity 0.3s ease-in-out;
     content: '';
     width: inherit;
     height: 16rem;
@@ -407,6 +406,7 @@ footer {
 body {
   transition: background-color 240ms ease-in-out, color 240ms ease-in-out;
   transition-delay: 100ms;
+  will-change: background-color color;
 }
 
 body.left {

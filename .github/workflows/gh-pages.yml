@@ -21,16 +21,31 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           
+      - name: Cache node modules
+        uses: actions/cache@v2.1.4
+        env:
+          cache-name: cache-node-modules
+        with:
+          # A list of files, directories, and wildcard patterns to cache and restore
+          path: ~/.npm
+          # An explicit key for restoring and saving the cache
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }} 
+          # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+          
       - name: Install eleventy
-        run: |
-          npm install -g @11ty/eleventy
+        run: npm install -g @11ty/eleventy
 
       - name: Install dependencies & build
-        run: |
-          npm install
-          eleventy
+        run: npm install
+        
+      - name: Build site
+        run: eleventy
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./_site

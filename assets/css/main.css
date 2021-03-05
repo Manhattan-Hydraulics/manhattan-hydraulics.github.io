@@ -432,7 +432,19 @@ main {
     font-size: 16px;
   }
 
-  footer {
+  footer:before {
+    transition: opacity 240ms ease-in;
+    transition-delay: 0s;
+    content: "";
+    width: inherit;
+    height: 16rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: 1;
+    pointer-events: none;
     background: var(--black-gradient);
   }
 

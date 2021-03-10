@@ -372,6 +372,10 @@ footer {
   padding-top: 1rem;
 }
 
+footer a {
+  padding: 5px 0
+}
+
 body {
   transition: background-color 240ms ease-in-out, color 240ms ease-in-out;
   transition-delay: 100ms;

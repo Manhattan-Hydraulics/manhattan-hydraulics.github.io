@@ -5,6 +5,7 @@
 - Redefining online discourse around divisive social issues
 - Helping high schoolers discover their version of success
 - Imagining futures for cloud-based personal computing
+- Guiding a platform for distributed economic cooperatives
 
 
 ## Team updates

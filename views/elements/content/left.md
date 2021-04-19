@@ -9,5 +9,5 @@
 
 
 ## Team updates
-- We're hiring another product designer! [Email us](mailto:hello@hydraulics.nyc) to apply (or refer a friend).
+- We're hiring a mid-level to senior product designer! [Email us](mailto:hello@hydraulics.nyc) to apply (or refer a friend).
 - [Sam Taylor](https://tohumankind.com/info) has joined our team.

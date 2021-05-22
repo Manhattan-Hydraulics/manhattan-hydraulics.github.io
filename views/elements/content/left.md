@@ -2,7 +2,7 @@
 
 ## Work in progress
 
-- Redefining online discourse around divisive social issues
+- Designing a community for making sense of the social issues dividing America
 - Helping high schoolers discover their version of success
 - Imagining futures for cloud-based personal computing
 - Guiding a platform for distributed economic cooperatives

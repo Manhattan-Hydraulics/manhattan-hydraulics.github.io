@@ -8,5 +8,16 @@
 - Designing [Dual Power](https://dualpower.app/), an open-source **platform for distributed economic cooperatives** with [Black Socialists in America](https://blacksocialists.us/).
 
 
-## Team updates
-- [Sam Winfield](https://samwinfield.com/) has joined our team as a product designer.
+## Our Team
+- Devin Halladay
+- Sam Taylor
+- Sam Winfield
+- Simone Robert
+- Tim Casasola
+- Winnie Yoe
+
+## Past Collaborators
+- Brendon Avalos
+- Darin Buzon
+
+

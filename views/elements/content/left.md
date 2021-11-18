@@ -19,5 +19,3 @@
 ## Past Collaborators
 - Brendon Avalos
 - Darin Buzon
-
-

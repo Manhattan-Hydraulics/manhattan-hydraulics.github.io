@@ -1,7 +1,6 @@
 # Manhattan Hydraulics Web Site ™
 
- <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Manhattan-Hydraulics/manhattan-hydraulics.github.io/">Manhattan Hydraulics Website</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="http://hydraulics.nyc/">Sanctuary Computer, Inc.</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p> 
- 
+Hi! This is the official website of [Manhattan Hydraulics](https://hydraulics.nyc/), a product studio and research group based in NYC. We've published the source code of our website to allow anyone to learn from how we've built it. However, the design and full implementation of this website is protected as our intellectual property. Please do not directly copy elements of this website's design, but you may adapt elements of the code for your own designs and needs.
  
  ---
 

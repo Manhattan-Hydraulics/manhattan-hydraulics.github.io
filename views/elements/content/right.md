@@ -15,7 +15,3 @@ A great product is also, well, how the product works. We work “close to the me
 
 ## Polishing the experience
 In the end, your product not only needs great foundations and mechanics, but also style and interactivity. We’ll develop a strong creative vision that brings your brand’s voice to life through the product’s visual design and interactions.
-
-Shouts to our sister studios: the technology studio [Sanctuary Computer](https://www.sanctuary.computer) and the designers at [XXIX](https://www.xxix.co).
-
-Hydraulics is partner to a network of creatives, and our sister companies — [XXIX](https://www.xxix.co) and [Sanctuary Computer](https://www.sanctuary.computer) — who we work with under one roof as [garden3d](https://www.garden3d.net/).

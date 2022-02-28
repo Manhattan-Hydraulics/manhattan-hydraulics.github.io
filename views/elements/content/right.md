@@ -1,6 +1,6 @@
 
 
-# Manhattan Hydraulics is a digital product studio and emerging technologies R&D group.
+# Manhattan Hydraulics is a digital product studio and emerging technologies R&D group. We're passionate about humane software that empowers individuals and organizations around the world to do better work, live happier lives, and think in new ways.
 
 We value responsibility, transparency, egalitarianism, support, autonomy, and good vibes. We’re excited to contribute to innovations in personal computing, web3 and peer-to-peer technologies, social equity and justice, and sustainability.
 

@@ -1,4 +1,3 @@
-
 ## Works in progress
 
 - Designing high-precision **data visualization design systems**
@@ -30,3 +29,4 @@ We are interdisciplinary designers, strategists, and technologists from top-tier
 - Brendon Avalos (Past)
 
 Hydraulics is partner to a network of creatives, and our sister companies — [XXIX](https://www.xxix.co) and [Sanctuary Computer](https://www.sanctuary.computer) — who we work with under one roof as [garden3d](https://www.garden3d.net/).
+

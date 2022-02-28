@@ -1,12 +1,12 @@
 
 
-## Work in progress
+## Works in progress
 
-- Designing a high-precision **data visualization design system**
-- Releasing a social platform for **collectively making sense of divisive issues in America**
-- Releasing an app to **help high schoolers discover their version of success**
-- Envisioning **flexible personal computers and web3 operating systems**
-- Designing an open-source **platform for distributed economic cooperatives**
+- Designing high-precision **data visualization design systems**
+- Releasing a space for **good-faith discourse on divisive topics**
+- Releasing a platform to **help high schoolers discover their version of success**
+- Exploring **flexible personal computers and new operating systems**
+- Designing an open-source **platform for economic cooperatives**
 
 ## Select clients
 - [Black Socialists in America](https://blacksocialists.us/)
@@ -19,7 +19,7 @@
 
 
 ## About our team
-We are interdisciplinary designers, strategists, and technologists from top-tier creative backgrounds. Currently, our team members are:
+We are interdisciplinary designers, strategists, and technologists from top-tier creative backgrounds. We value autonomy, transparency, care, and good vibes. We’re excited about projects in personal computing, specialized tools, web3 and peer-to-peer technology, social equity and justice, and sustainability.
 
 - Winnie Yoe
 - Sam Winfield
@@ -27,9 +27,7 @@ We are interdisciplinary designers, strategists, and technologists from top-tier
 - Simone Robert
 - Devin Halladay
 - Tim Casasola
+- Darin Buzon (Past)
+- Brendon Avalos (Past)
 
 Hydraulics is partner to a network of creatives, and our sister companies — [XXIX](https://www.xxix.co) and [Sanctuary Computer](https://www.sanctuary.computer) — who we work with under one roof as [garden3d](https://www.garden3d.net/).
-
-## Past members
-- Darin Buzon
-- Brendon Avalos

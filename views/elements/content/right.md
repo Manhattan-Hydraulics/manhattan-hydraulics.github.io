@@ -2,7 +2,7 @@
 
 # Manhattan Hydraulics is a digital product studio and emerging technologies R&D group.
 
-We’re [not a traditional agency](https://garden3d.substack.com/p/were-not-a-traditional-agency), and we don’t act like one. Our transparent process and flexible toolkit allow us to work just like an in-house product team.
+# We’re [not a traditional agency](https://garden3d.substack.com/p/were-not-a-traditional-agency), and we don’t act like one. Our transparent process and flexible toolkit allow us to work just like an in-house product team.
 
 ## Design like water
 We work adaptively to shape products as we learn more about a business and develop domain expertise. We embed our team with yours, forming a tight-knit, coordinated effort to steward an idea from hunch, to definition, to production.

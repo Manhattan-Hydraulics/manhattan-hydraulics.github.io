@@ -1,8 +1,8 @@
 
 
-# Manhattan Hydraulics is a digital product studio and emerging technologies R&D group. We're passionate about humane software that empowers individuals and organizations around the world to do better work, live happier lives, and think in new ways.
+# Manhattan Hydraulics is a digital product studio and emerging technologies R&D group.
 
-We value responsibility, transparency, egalitarianism, support, autonomy, and good vibes. We’re excited to contribute to innovations in personal computing, web3 and peer-to-peer technologies, social equity and justice, and sustainability.
+We’re [not a traditional agency](https://garden3d.substack.com/p/were-not-a-traditional-agency), and we don’t act like one. Our transparent process and flexible toolkit allow us to work just like an in-house product team.
 
 ## Design like water
 We work adaptively to shape products as we learn more about a business and develop domain expertise. We embed our team with yours, forming a tight-knit, coordinated effort to steward an idea from hunch, to definition, to production.
